@@ -8,7 +8,7 @@ frontend/   React SPA (form, Leaflet map pin, results)
 backend/    FastAPI: /api/meta, /api/predict, /api/health (+ serves the SPA in prod)
 flatprice/  shared feature encoding used by training AND serving (no train/serve skew)
 ml/         training: prepare.py, train.py, sagemaker_train.py (optional lab flow)
-artifacts/  trained models: {rent,sale}/model.json, columns.json, metrics.json, meta.json
+artifacts/  trained models: {rent,sale}/model.ubj, columns.json, metrics.json, meta.json
 ```
 
 ## Current model quality (held-out test set, 15%)

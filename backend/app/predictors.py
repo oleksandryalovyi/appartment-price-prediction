@@ -22,7 +22,7 @@ class LocalPredictor:
         self._boosters = {}
         for target, m in models.items():
             b = xgb.Booster()
-            b.load_model(m.dir / "model.json")
+            b.load_model(m.dir / "model.ubj")
             self._boosters[target] = (b, m.columns)
 
     def predict(self, target, rows):

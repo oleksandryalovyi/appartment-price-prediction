@@ -82,7 +82,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     # Trim to best iteration so serving needs no iteration_range.
     booster = booster[: booster.best_iteration + 1]
-    booster.save_model(out / "model.json")
+    booster.save_model(out / "model.ubj")  # binary: smaller file, ~2x less RAM to load than JSON
     (out / "columns.json").write_text(json.dumps(columns, indent=1))
     (out / "metrics.json").write_text(json.dumps(m, indent=2))
     (out / "meta.json").write_text(json.dumps(build_meta(df, categories), indent=1))
