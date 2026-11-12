@@ -1,0 +1,10 @@
+# Same single image that Render runs: API + built SPA + models on http://localhost:8000
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      PREDICTOR: ${PREDICTOR:-local}
+      AWS_REGION: ${AWS_REGION:-eu-central-1}
+      SAGEMAKER_RENT_ENDPOINT: ${SAGEMAKER_RENT_ENDPOINT:-}
+      SAGEMAKER_SALE_ENDPOINT: ${SAGEMAKER_SALE_ENDPOINT:-}

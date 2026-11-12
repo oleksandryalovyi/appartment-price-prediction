@@ -1,0 +1,42 @@
+# Local development: API + frontend with hot reload.
+#   docker compose up        -> UI on http://localhost:5173, API on http://localhost:8000/docs
+#   docker compose down      -> stop everything
+# Production-like single container (what gets deployed): docker compose -f docker-compose.prod.yml up --build
+services:
+  api:
+    build:
+      context: backend
+      dockerfile: Dockerfile.dev
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /repo/backend/app --reload-dir /repo/flatprice
+    ports: ["8000:8000"]
+    volumes:
+      - ./backend:/repo/backend
+      - ./flatprice:/repo/flatprice
+      - ./artifacts:/repo/artifacts
+    environment:
+      PREDICTOR: ${PREDICTOR:-local}
+      CORS_ORIGINS: '["http://localhost:5173"]'
+      AWS_REGION: ${AWS_REGION:-eu-central-1}
+      SAGEMAKER_RENT_ENDPOINT: ${SAGEMAKER_RENT_ENDPOINT:-}
+      SAGEMAKER_SALE_ENDPOINT: ${SAGEMAKER_SALE_ENDPOINT:-}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 5s
+      retries: 20
+
+  web:
+    image: node:22-alpine
+    working_dir: /web
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    ports: ["5173:5173"]
+    volumes:
+      - ./frontend:/web
+      - web_node_modules:/web/node_modules   # keep Linux deps separate from your macOS ones
+    environment:
+      API_URL: http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  web_node_modules:

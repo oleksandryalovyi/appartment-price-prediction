@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "app",
+      "runtimeExecutable": "/Users/user/Documents/Pets/flat-price-analizer/.venv/bin/uvicorn",
+      "runtimeArgs": ["app.main:app", "--port", "8000", "--app-dir", "/Users/user/Documents/Pets/flat-price-analizer/backend"],
+      "env": { "PYTHONPATH": "/Users/user/Documents/Pets/flat-price-analizer", "STATIC_DIR": "/Users/user/Documents/Pets/flat-price-analizer/frontend/dist", "ARTIFACTS_DIR": "/Users/user/Documents/Pets/flat-price-analizer/artifacts" },
+      "cwd": "/Users/user/Documents/Pets/flat-price-analizer",
+      "port": 8000
+    }
+  ]
+}

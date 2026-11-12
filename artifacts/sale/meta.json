@@ -1,0 +1,377 @@
+{
+ "categories": {
+  "city": [
+   "bialystok",
+   "bydgoszcz",
+   "czestochowa",
+   "gdansk",
+   "gdynia",
+   "katowice",
+   "krakow",
+   "lodz",
+   "lublin",
+   "poznan",
+   "radom",
+   "rzeszow",
+   "szczecin",
+   "warszawa",
+   "wroclaw"
+  ],
+  "type": [
+   "apartmentBuilding",
+   "blockOfFlats",
+   "tenement"
+  ],
+  "ownership": [
+   "condominium",
+   "cooperative",
+   "udzia\u0142"
+  ],
+  "buildingMaterial": [
+   "brick",
+   "concreteSlab"
+  ],
+  "condition": [
+   "low",
+   "premium"
+  ]
+ },
+ "cities": {
+  "bialystok": {
+   "centre": [
+    53.132901,
+    23.14395459
+   ],
+   "medians": {
+    "centreDistance": 2.13,
+    "poiCount": 15.0,
+    "schoolDistance": 0.256,
+    "clinicDistance": 0.439,
+    "postOfficeDistance": 0.3085,
+    "kindergartenDistance": 0.224,
+    "restaurantDistance": 0.2285,
+    "collegeDistance": 1.155,
+    "pharmacyDistance": 0.204
+   },
+   "count": 1017
+  },
+  "bydgoszcz": {
+   "centre": [
+    53.12334383,
+    18.00464
+   ],
+   "medians": {
+    "centreDistance": 2.0949999999999998,
+    "poiCount": 14.0,
+    "schoolDistance": 0.2425,
+    "clinicDistance": 0.5754999999999999,
+    "postOfficeDistance": 0.3995,
+    "kindergartenDistance": 0.281,
+    "restaurantDistance": 0.203,
+    "collegeDistance": 0.759,
+    "pharmacyDistance": 0.207
+   },
+   "count": 3484
+  },
+  "czestochowa": {
+   "centre": [
+    50.81166159,
+    19.125458
+   ],
+   "medians": {
+    "centreDistance": 2.5,
+    "poiCount": 10.0,
+    "schoolDistance": 0.256,
+    "clinicDistance": 0.919,
+    "postOfficeDistance": 0.363,
+    "kindergartenDistance": 0.4225,
+    "restaurantDistance": 0.36,
+    "collegeDistance": 1.4095,
+    "pharmacyDistance": 0.225
+   },
+   "count": 1140
+  },
+  "gdansk": {
+   "centre": [
+    54.34998,
+    18.65574
+   ],
+   "medians": {
+    "centreDistance": 5.35,
+    "poiCount": 10.0,
+    "schoolDistance": 0.364,
+    "clinicDistance": 0.967,
+    "postOfficeDistance": 0.354,
+    "kindergartenDistance": 0.3225,
+    "restaurantDistance": 0.239,
+    "collegeDistance": 1.834,
+    "pharmacyDistance": 0.303
+   },
+   "count": 8244
+  },
+  "gdynia": {
+   "centre": [
+    54.521168450000005,
+    18.5393982
+   ],
+   "medians": {
+    "centreDistance": 4.39,
+    "poiCount": 3.0,
+    "schoolDistance": 0.649,
+    "clinicDistance": 2.557,
+    "postOfficeDistance": 0.7865,
+    "kindergartenDistance": 0.567,
+    "restaurantDistance": 0.6315,
+    "collegeDistance": 1.801,
+    "pharmacyDistance": 0.576
+   },
+   "count": 3531
+  },
+  "katowice": {
+   "centre": [
+    50.2598987,
+    19.0171951817131
+   ],
+   "medians": {
+    "centreDistance": 2.76,
+    "poiCount": 9.0,
+    "schoolDistance": 0.298,
+    "clinicDistance": 0.525,
+    "postOfficeDistance": 0.468,
+    "kindergartenDistance": 0.321,
+    "restaurantDistance": 0.287,
+    "collegeDistance": 1.084,
+    "pharmacyDistance": 0.268
+   },
+   "count": 2335
+  },
+  "krakow": {
+   "centre": [
+    50.054781000000006,
+    19.9421127
+   ],
+   "medians": {
+    "centreDistance": 4.25,
+    "poiCount": 13.0,
+    "schoolDistance": 0.311,
+    "clinicDistance": 0.672,
+    "postOfficeDistance": 0.352,
+    "kindergartenDistance": 0.268,
+    "restaurantDistance": 0.217,
+    "collegeDistance": 1.1684999999999999,
+    "pharmacyDistance": 0.245
+   },
+   "count": 14088
+  },
+  "lodz": {
+   "centre": [
+    51.782,
+    19.45481
+   ],
+   "medians": {
+    "centreDistance": 3.97,
+    "poiCount": 13.0,
+    "schoolDistance": 0.257,
+    "clinicDistance": 0.785,
+    "postOfficeDistance": 0.41,
+    "kindergartenDistance": 0.238,
+    "restaurantDistance": 0.287,
+    "collegeDistance": 1.3285,
+    "pharmacyDistance": 0.236
+   },
+   "count": 6977
+  },
+  "lublin": {
+   "centre": [
+    51.246602525,
+    22.565289999999997
+   ],
+   "medians": {
+    "centreDistance": 2.69,
+    "poiCount": 15.0,
+    "schoolDistance": 0.285,
+    "clinicDistance": 1.187,
+    "postOfficeDistance": 0.443,
+    "kindergartenDistance": 0.17,
+    "restaurantDistance": 0.264,
+    "collegeDistance": 0.725,
+    "pharmacyDistance": 0.217
+   },
+   "count": 2298
+  },
+  "poznan": {
+   "centre": [
+    52.40755413,
+    16.9359819
+   ],
+   "medians": {
+    "centreDistance": 3.26,
+    "poiCount": 13.0,
+    "schoolDistance": 0.279,
+    "clinicDistance": 0.636,
+    "postOfficeDistance": 0.35,
+    "kindergartenDistance": 0.337,
+    "restaurantDistance": 0.248,
+    "collegeDistance": 1.644,
+    "pharmacyDistance": 0.204
+   },
+   "count": 3639
+  },
+  "radom": {
+   "centre": [
+    51.402209,
+    21.14202505
+   ],
+   "medians": {
+    "centreDistance": 1.85,
+    "poiCount": 15.0,
+    "schoolDistance": 0.216,
+    "clinicDistance": 0.361,
+    "postOfficeDistance": 0.3035,
+    "kindergartenDistance": 0.24,
+    "restaurantDistance": 0.216,
+    "collegeDistance": 0.647,
+    "pharmacyDistance": 0.22
+   },
+   "count": 797
+  },
+  "rzeszow": {
+   "centre": [
+    50.0395408,
+    22.0036546
+   ],
+   "medians": {
+    "centreDistance": 2.26,
+    "poiCount": 11.0,
+    "schoolDistance": 0.331,
+    "clinicDistance": 1.214,
+    "postOfficeDistance": 0.475,
+    "kindergartenDistance": 0.252,
+    "restaurantDistance": 0.331,
+    "collegeDistance": 0.6505000000000001,
+    "pharmacyDistance": 0.259
+   },
+   "count": 762
+  },
+  "szczecin": {
+   "centre": [
+    53.423582125,
+    14.558681
+   ],
+   "medians": {
+    "centreDistance": 3.15,
+    "poiCount": 10.0,
+    "schoolDistance": 0.288,
+    "clinicDistance": 0.657,
+    "postOfficeDistance": 0.294,
+    "kindergartenDistance": 0.316,
+    "restaurantDistance": 0.216,
+    "collegeDistance": 1.118,
+    "pharmacyDistance": 0.21
+   },
+   "count": 2485
+  },
+  "warszawa": {
+   "centre": [
+    52.2297,
+    21.0098293
+   ],
+   "medians": {
+    "centreDistance": 5.95,
+    "poiCount": 16.0,
+    "schoolDistance": 0.284,
+    "clinicDistance": 0.528,
+    "postOfficeDistance": 0.413,
+    "kindergartenDistance": 0.224,
+    "restaurantDistance": 0.186,
+    "collegeDistance": 1.176,
+    "pharmacyDistance": 0.227
+   },
+   "count": 31677
+  },
+  "wroclaw": {
+   "centre": [
+    51.1106992,
+    17.0316614
+   ],
+   "medians": {
+    "centreDistance": 3.22,
+    "poiCount": 13.0,
+    "schoolDistance": 0.284,
+    "clinicDistance": 0.962,
+    "postOfficeDistance": 0.425,
+    "kindergartenDistance": 0.211,
+    "restaurantDistance": 0.307,
+    "collegeDistance": 0.902,
+    "pharmacyDistance": 0.237
+   },
+   "count": 9598
+  }
+ },
+ "ranges": {
+  "squareMeters": [
+   25.0,
+   150.0
+  ],
+  "rooms": [
+   1.0,
+   6.0
+  ],
+  "floor": [
+   1.0,
+   29.0
+  ],
+  "floorCount": [
+   1.0,
+   29.0
+  ],
+  "buildYear": [
+   1850.0,
+   2024.0
+  ],
+  "latitude": [
+   49.9789994,
+   54.60646
+  ],
+  "longitude": [
+   14.4471272,
+   23.20887264
+  ],
+  "centreDistance": [
+   0.01,
+   16.92
+  ],
+  "poiCount": [
+   0.0,
+   211.0
+  ],
+  "schoolDistance": [
+   0.002,
+   4.946
+  ],
+  "clinicDistance": [
+   0.001,
+   4.999
+  ],
+  "postOfficeDistance": [
+   0.001,
+   4.97
+  ],
+  "kindergartenDistance": [
+   0.001,
+   4.961
+  ],
+  "restaurantDistance": [
+   0.001,
+   4.985
+  ],
+  "collegeDistance": [
+   0.004,
+   5.0
+  ],
+  "pharmacyDistance": [
+   0.001,
+   4.992
+  ]
+ }
+}
